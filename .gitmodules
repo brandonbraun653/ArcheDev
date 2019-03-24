@@ -1,0 +1,18 @@
+[submodule "Arche"]
+	path = Arche
+	url = git@github.com:brandonbraun653/Arche.git
+[submodule "lib/Chimera"]
+	path = lib/Chimera
+	url = git@github.com:brandonbraun653/Chimera.git
+[submodule "lib/Thor"]
+	path = lib/Thor
+	url = git@github.com:brandonbraun653/Thor.git
+[submodule "lib/stm32hal_f4"]
+	path = lib/stm32hal_f4
+	url = git@github.com:brandonbraun653/STM32HAL_F4.git
+[submodule "lib/cmsis"]
+	path = lib/cmsis
+	url = https://github.com/ARM-software/CMSIS_5.git
+[submodule "lib/FreeRTOS"]
+	path = lib/FreeRTOS
+	url = git@github.com:brandonbraun653/FreeRTOS.git

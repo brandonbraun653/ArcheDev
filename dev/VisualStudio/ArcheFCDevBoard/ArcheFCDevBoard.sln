@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArcheFCDevBoard", "ArcheFCDevBoard\ArcheFCDevBoard.vcxproj", "{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArcheTest", "ArcheTest\ArcheTest.vcxproj", "{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|VisualGDB = Debug|VisualGDB
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|VisualGDB = Release|VisualGDB
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Debug|VisualGDB.ActiveCfg = Debug|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Debug|VisualGDB.Build.0 = Debug|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Debug|x64.ActiveCfg = Debug|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Debug|x86.ActiveCfg = Debug|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Release|VisualGDB.ActiveCfg = Release|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Release|VisualGDB.Build.0 = Release|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Release|x64.ActiveCfg = Release|VisualGDB
+		{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}.Release|x86.ActiveCfg = Release|VisualGDB
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Debug|VisualGDB.ActiveCfg = Debug|Win32
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Debug|x64.ActiveCfg = Debug|x64
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Debug|x64.Build.0 = Debug|x64
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Debug|x86.ActiveCfg = Debug|Win32
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Debug|x86.Build.0 = Debug|Win32
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Release|VisualGDB.ActiveCfg = Release|Win32
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Release|x64.ActiveCfg = Release|x64
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Release|x64.Build.0 = Release|x64
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Release|x86.ActiveCfg = Release|Win32
+		{22DD7873-A834-4F43-BBE5-12EAB4B4ACD6}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F415828A-0BCC-4FBA-8839-6C549B90C9FB}
+	EndGlobalSection
+EndGlobal
