@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4_hal_uart.cpp">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\tst\test_init.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Arche\tst\arche_test_fixtures.cpp">
+      <Filter>tst</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4_hal_uart.hpp">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\core_cm4.h">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4_hal_uart_defs.hpp">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\tst\arche_test_fixtures.hpp">
+      <Filter>tst</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="stm32hal_f4">
+      <UniqueIdentifier>{6356d495-a863-4ad6-9f3f-54b20824cb25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stm32hal_f4\mock">
+      <UniqueIdentifier>{943ce6dd-0795-42ed-8033-d025a9f15e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tst">
+      <UniqueIdentifier>{19c3d08e-f53d-4dc8-98cc-19d60341471f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
