@@ -234,9 +234,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\chimeraPort.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\clock.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
@@ -1037,6 +1034,12 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp">
       <Filter>Arche</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp">
+      <Filter>Thor\config</Filter>
+    </ClInclude>
+    <ClInclude Include="test_thread.hpp">
+      <Filter>Source files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1059,6 +1062,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp">
       <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="test_thread.cpp">
+      <Filter>Source files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -71,6 +71,7 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="test_thread.cpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
@@ -119,9 +120,9 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\chimeraPort.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\clock.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\core.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\defaults.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\definitions.hpp" />
@@ -385,5 +386,6 @@
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\GCC\ARM_CM4F\port.c" />
     <ClInclude Include="..\..\..\..\lib\FreeRTOS\portable\GCC\ARM_CM4F\portmacro.h" />
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\MemMang\heap_4.c" />
+    <ClInclude Include="test_thread.hpp" />
   </ItemGroup>
 </Project>
