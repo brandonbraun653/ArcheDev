@@ -42,7 +42,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <CPPLanguageStandard>GNUPP14</CPPLanguageStandard>
-      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;</PreprocessorDefinitions>
       <CLanguageStandard>GNU11</CLanguageStandard>
     </ClCompile>
@@ -50,7 +50,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
       <CPPLanguageStandard>GNUPP14</CPPLanguageStandard>
-      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;</PreprocessorDefinitions>
       <CLanguageStandard>GNU11</CLanguageStandard>
     </ClCompile>
@@ -70,6 +70,22 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_boost_stub.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_core.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_defaults.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exceptions.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exti.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_watchdog.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_thread.cpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp" />
@@ -93,66 +109,9 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\blockDevice.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\boostStub.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\clock.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\defaults.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\definitions.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\exceptions.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\exti.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\flags.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\gdb.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\i2c.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\interrupt.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\mem.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\nucleo.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\pwm.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\ringbuffer.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\rpc.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_core.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_timer.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_watchdog.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\threads.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\clock.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\core.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\defaults.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\definitions.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\exceptions.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\exti.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\flags.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\gdb.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\gpio.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\headers.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\i2c.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\interrupt.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\macro.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\mem.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\nucleo.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\preprocessor.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\print.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\pwm.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\ringbuffer.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\rpc.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\serial.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\spi.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\system.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\threads.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\timer.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\types.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\uart.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\usart.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\utilities.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\watchdog.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\FreeRTOSConfig.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\conf\stm32f4xx_hal_conf.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\include\stm32f401xc.h" />
@@ -386,6 +345,27 @@
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\GCC\ARM_CM4F\port.c" />
     <ClInclude Include="..\..\..\..\lib\FreeRTOS\portable\GCC\ARM_CM4F\portmacro.h" />
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\MemMang\heap_4.c" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\core.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\defaults.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\definitions.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\exceptions.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\exti.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\gpio.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\headers.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\interrupt.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\macro.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\mem.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\nucleo.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\preprocessor.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\print.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\serial.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\spi.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\system.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\types.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\uart.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\usart.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\watchdog.hpp" />
     <ClInclude Include="test_thread.hpp" />
   </ItemGroup>
 </Project>

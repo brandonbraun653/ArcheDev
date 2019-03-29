@@ -22,84 +22,6 @@
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_rcc.cpp">
       <Filter>stm32hal_f4\mock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_timer.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_watchdog.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\threads.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\boostStub.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\clock.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\defaults.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\definitions.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\exceptions.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\exti.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\flags.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\gdb.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\i2c.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\mem.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\nucleo.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\pwm.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\ringbuffer.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\rpc.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_core.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_iwdg.cpp">
       <Filter>stm32hal_f4\mock</Filter>
     </ClCompile>
@@ -111,6 +33,54 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_dma.cpp">
       <Filter>stm32hal_f4\mock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_watchdog.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_boost_stub.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_core.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_defaults.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exceptions.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exti.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp">
+      <Filter>Thor</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -144,11 +114,23 @@
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_rcc.hpp">
       <Filter>stm32hal_f4\mock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\threads.hpp">
-      <Filter>Thor</Filter>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\FreeRTOSConfig.h">
+      <Filter>Thor\config</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\timer.hpp">
-      <Filter>Thor</Filter>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp">
+      <Filter>Thor\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_iwdg.hpp">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_wwdg.hpp">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_gpio.hpp">
+      <Filter>stm32hal_f4\mock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_dma.hpp">
+      <Filter>stm32hal_f4\mock</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\types.hpp">
       <Filter>Thor</Filter>
@@ -159,16 +141,10 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\usart.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\utilities.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\watchdog.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\clock.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config.hpp">
@@ -189,19 +165,10 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\exti.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\flags.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\gdb.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\gpio.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\headers.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\i2c.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\interrupt.hpp">
@@ -222,15 +189,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\print.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\pwm.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\ringbuffer.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\rpc.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\serial.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
@@ -242,24 +200,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp">
       <Filter>Thor</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\FreeRTOSConfig.h">
-      <Filter>Thor\config</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp">
-      <Filter>Thor\config</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_iwdg.hpp">
-      <Filter>stm32hal_f4\mock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_wwdg.hpp">
-      <Filter>stm32hal_f4\mock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_gpio.hpp">
-      <Filter>stm32hal_f4\mock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_dma.hpp">
-      <Filter>stm32hal_f4\mock</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
