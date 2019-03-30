@@ -82,6 +82,9 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_dma.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\core_cm4.h">
@@ -199,6 +202,9 @@
       <Filter>Thor</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp">
+      <Filter>Thor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\dma.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
   </ItemGroup>
