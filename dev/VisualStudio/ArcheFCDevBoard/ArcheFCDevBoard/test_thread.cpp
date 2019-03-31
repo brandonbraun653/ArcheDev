@@ -14,15 +14,12 @@ static const Chimera::Serial::Parity parity = Chimera::Serial::Parity::PAR_NONE;
 static const Chimera::Serial::StopBits stop = Chimera::Serial::StopBits::SBITS_ONE;
 static const Chimera::Serial::FlowControl flow = Chimera::Serial::FlowControl::FCTRL_NONE;
 
-static const uint32_t ledChangeDelay_mS = 250;
-
 static constexpr size_t bufferSize = 100;
 
 void test_thread( void *argument )
 {
   Chimera::Serial::IOPins pins;
   Chimera::Serial::SerialClass serial( bufferSize );
-  Chimera::Status_t error;
 
   Chimera::Threading::signalThreadSetupComplete();
 
@@ -46,7 +43,7 @@ void test_thread( void *argument )
   serial.enableBuffering( Chimera::Serial::SubPeripheral::TX, &txBuffer );
   serial.enableBuffering( Chimera::Serial::SubPeripheral::RX, &rxBuffer );
 
-  error = serial.begin( Chimera::Serial::Modes::BLOCKING, Chimera::Serial::Modes::DMA );
+  serial.begin( Chimera::Serial::Modes::BLOCKING, Chimera::Serial::Modes::DMA );
 
   std::string hello_world = "hello world\r\n";
   std::string queue_data  = "some queued data\r\n";
@@ -76,21 +73,3 @@ void test_thread( void *argument )
   }
 }
 
-
-void led_heartbeat( void *argument )
-{
-  Chimera::GPIO::GPIOClass led;
-  Chimera::Threading::signalThreadSetupComplete();
-
-  led.init( Chimera::GPIO::Port::PORTC, 8 );
-  led.setMode( Chimera::GPIO::Drive::OUTPUT_PUSH_PULL, false );
-  led.setState( Chimera::GPIO::State::LOW );
-
-  for ( ;; )
-  {
-    led.setState( Chimera::GPIO::State::HIGH );
-    Chimera::delayMilliseconds( ledChangeDelay_mS );
-    led.setState( Chimera::GPIO::State::LOW );
-    Chimera::delayMilliseconds( ledChangeDelay_mS );
-  }
-}

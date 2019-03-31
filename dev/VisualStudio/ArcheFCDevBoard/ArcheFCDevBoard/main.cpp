@@ -4,6 +4,8 @@
 
 #include <test_thread.hpp>
 
+#include <Arche/threads.hpp>
+
 int main()
 {
   ChimeraInit();
