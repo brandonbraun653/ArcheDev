@@ -920,9 +920,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\headers.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\interrupt.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\macro.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
@@ -980,9 +977,6 @@
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp">

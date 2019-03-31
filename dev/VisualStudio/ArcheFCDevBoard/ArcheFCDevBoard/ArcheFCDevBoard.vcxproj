@@ -78,7 +78,6 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exceptions.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exti.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
@@ -354,7 +353,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\exti.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\gpio.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\headers.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\interrupt.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\macro.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\mem.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\nucleo.hpp" />

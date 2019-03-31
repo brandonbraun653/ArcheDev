@@ -42,6 +42,7 @@
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_iwdg.hpp" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_rcc.hpp" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_uart.hpp" />
+    <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_usart.hpp" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_wwdg.hpp" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\stm32f446xx.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\stm32f4xx.h" />
@@ -59,7 +60,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\exti.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\gpio.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\headers.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\interrupt.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\macro.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\mem.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\nucleo.hpp" />
@@ -84,6 +84,7 @@
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_iwdg.cpp" />
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_rcc.cpp" />
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_uart.cpp" />
+    <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_usart.cpp" />
     <ClCompile Include="..\..\..\..\lib\stm32hal_f4\mock\mock_stm32f4xx_hal_wwdg.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_boost_stub.cpp" />
@@ -93,7 +94,6 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exceptions.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exti.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp" />
@@ -126,6 +126,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -146,6 +147,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -164,6 +166,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -184,6 +187,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
