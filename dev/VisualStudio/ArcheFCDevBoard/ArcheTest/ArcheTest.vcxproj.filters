@@ -40,9 +40,6 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp">
       <Filter>Thor</Filter>
     </ClCompile>

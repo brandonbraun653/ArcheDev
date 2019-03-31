@@ -14,7 +14,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{4646B857-2752-4BD1-AB2A-AB9E50B8F0B7}</ProjectGuid>
     <BSP_ID>com.sysprogs.arm.stm32</BSP_ID>
-    <BSP_VERSION>2018.12</BSP_VERSION>
+    <BSP_VERSION>2018.12R2</BSP_VERSION>
     <InPlaceBSPSubdir />
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -42,7 +42,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|VisualGDB'">
     <ClCompile>
       <CPPLanguageStandard>GNUPP14</CPPLanguageStandard>
-      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/Arche/config/freertos;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;</PreprocessorDefinitions>
       <CLanguageStandard>GNU11</CLanguageStandard>
     </ClCompile>
@@ -50,7 +50,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
       <CPPLanguageStandard>GNUPP14</CPPLanguageStandard>
-      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/Arche/config/freertos;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;</PreprocessorDefinitions>
       <CLanguageStandard>GNU11</CLanguageStandard>
     </ClCompile>
@@ -90,6 +90,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_thread.cpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />
@@ -113,7 +114,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\FreeRTOSConfig.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\conf\stm32f4xx_hal_conf.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\include\stm32f401xc.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\include\stm32f401xe.h" />

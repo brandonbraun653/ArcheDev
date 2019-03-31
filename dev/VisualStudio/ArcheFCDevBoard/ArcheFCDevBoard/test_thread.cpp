@@ -46,26 +46,31 @@ void test_thread( void *argument )
   serial.enableBuffering( Chimera::Serial::SubPeripheral::TX, &txBuffer );
   serial.enableBuffering( Chimera::Serial::SubPeripheral::RX, &rxBuffer );
 
-  error = serial.begin( Chimera::Serial::Modes::INTERRUPT, Chimera::Serial::Modes::INTERRUPT );
+  error = serial.begin( Chimera::Serial::Modes::BLOCKING, Chimera::Serial::Modes::DMA );
 
   std::string hello_world = "hello world\r\n";
   std::string queue_data  = "some queued data\r\n";
 
   std::array<uint8_t, bufferSize> readData;
+  readData.fill(0);
 
   size_t bytesAvailable = 0;
 
+  serial.read(nullptr, 5);
+
   for ( ;; )
   {
-    serial.write( reinterpret_cast<const uint8_t *>( hello_world.data() ), hello_world.length() );
-    serial.write( reinterpret_cast<const uint8_t *>( queue_data.data() ), queue_data.length() );
+    //serial.write( reinterpret_cast<const uint8_t *>( hello_world.data() ), hello_world.length() );
+    //serial.write( reinterpret_cast<const uint8_t *>( queue_data.data() ), queue_data.length() );
 
     if ( serial.available( &bytesAvailable ) )
     {
       auto maxLen = std::min( bufferSize, bytesAvailable );
       serial.readAsync( readData.data(), maxLen );
       serial.write( readData.data(), bytesAvailable );
+      serial.read(nullptr, 5);
     }
+
 
     Chimera::delayMilliseconds( 100 );
   }

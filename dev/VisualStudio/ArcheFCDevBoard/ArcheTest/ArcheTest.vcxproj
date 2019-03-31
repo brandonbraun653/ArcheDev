@@ -95,7 +95,6 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_interrupt.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp" />
@@ -123,7 +122,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Thor/Thor/config/freertos;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
@@ -143,7 +142,7 @@
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Thor/Thor/config/freertos;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
@@ -161,7 +160,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Thor/Thor/config/freertos;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>
@@ -181,7 +180,7 @@
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)../../../../lib/stm32hal_f4/mock;$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/MSVC-MingW;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Thor/Thor/config/freertos;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/tst;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Sync</ExceptionHandling>
       <ConformanceMode>false</ConformanceMode>
       <LanguageStandard>stdcpp14</LanguageStandard>

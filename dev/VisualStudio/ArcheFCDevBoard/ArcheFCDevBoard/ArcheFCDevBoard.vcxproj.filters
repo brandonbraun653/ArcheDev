@@ -88,6 +88,9 @@
     <Filter Include="FreeRTOS\portable\MemMang">
       <UniqueIdentifier>{c9062205-4b45-475f-b545-d9e70afb49d9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arche\config">
+      <UniqueIdentifier>{b2bda240-dabf-4739-916c-f3e496be3f18}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props">
@@ -167,9 +170,6 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp">
       <Filter>Chimera\modules\memory</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\FreeRTOSConfig.h">
-      <Filter>Thor\config</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\conf\stm32f4xx_hal_conf.h">
       <Filter>stm32hal_f4\Device\conf</Filter>
@@ -952,6 +952,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\dma.hpp">
       <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h">
+      <Filter>Arche\config</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
