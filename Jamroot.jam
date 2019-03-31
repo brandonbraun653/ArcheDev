@@ -1,0 +1,53 @@
+import os ;
+import feature ;
+
+rule explicit_alias ( name : sources * : requirements * : default-build * : usage-requirements * )
+    {
+    alias $(name) : $(sources) : $(requirements) : $(default-build) : $(usage-requirements) ;
+    explicit $(name) ;
+    }
+
+path-constant TOP : . ;
+path-constant OBJCOPY : "D:/ProgramFiles/gcc/bin/arm-none-eabi-objcopy.exe" ;
+
+using gcc : 8.2.1 : "D:/ProgramFiles/gcc/bin/arm-none-eabi-g++.exe" 
+    :   <archiver>D:/ProgramFiles/gcc/bin/arm-none-eabi-ar.exe
+        <ranlib>D:/ProgramFiles/gcc/bin/arm-none-eabi-ranlib.exe
+    ;
+
+use-project /PRJ : . ;
+use-project /CHIMERA : lib/Chimera ;
+use-project /FREERTOS : lib/FreeRTOS ;
+use-project /THOR : lib/Thor ;
+use-project /STM32F4 : lib/stm32hal_f4 ;
+use-project /ARCHE : Arche ;
+
+
+local boost_install_dir = [ os.environ BOOST_ROOT ] ;
+path-constant boost_inc_dir : $(boost_install_dir)/boost_1_68_0 ;
+path-constant artifacts_dir : $(TOP)/artifacts ;
+
+# ------------------------------------------
+# /PRJ//XXXX Aliases
+# ------------------------------------------
+explicit_alias BOOST : : : : <include>$(boost_inc_dir) ;
+explicit_alias CHIMERA_PORT : : : : <use>/THOR//CHIMERA_PORT ;
+explicit_alias FreeRTOS_CFG : : : : <include>Arche/Arche/config/freertos ;
+explicit_alias TARGET_OPTIONS : : : : <use>/THOR//CORE_PUB ;
+
+project Arche
+    : requirements
+        <architecture>arm
+        <toolset>gcc
+        <link>static
+        <linkflags>-Wl,-Map,$(artifacts_dir)/aerofc.map
+        <cxxflags>--std=gnu++14
+        <ThorFamily>STM32F4
+        <ThorChip>STM32F446
+        <ThorVariant>RE
+        <FreeRTOS>enabled
+        <FreeRTOSMem>heap4
+        <Chimera>enabled
+        <ChimeraBackend>Thor
+    ;
+

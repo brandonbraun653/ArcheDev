@@ -1,0 +1,43 @@
+
+local dev_dir = dev/VisualStudio/ArcheFCDevBoard/ArcheFCDevBoard ;
+
+exe ARCHE_DEV
+    :   $(dev_dir)/main.cpp
+        $(dev_dir)/test_thread.cpp
+        /CHIMERA//CORE
+        /THOR//CORE
+        /FREERTOS//CORE
+        /FREERTOS//DEVICE_TARGET
+        /ARCHE//ARCHE_LIB
+
+    :   <link>static
+        <include>$(arche_inc_dir)
+        <include>$(dev_dir)
+        <use>/CHIMERA//PUB
+        <use>/ARCHE//PUB
+    ;
+explicit ARCHE_DEV ;
+
+explicit_alias elf : ARCHE_DEV ;
+
+alias dev : install-ARCHE ;
+
+install install-ARCHE : arche_dev.hex arche_dev.bin : <location>$(TOP)/artifacts ;
+
+# ------------------------------------------
+# Converts the .elf file output into .hex
+# ------------------------------------------
+make arche_dev.hex : elf : @elf2hex ;
+actions elf2hex
+{
+    $(OBJCOPY) -O ihex $(>) $(<)
+}
+
+# ------------------------------------------
+# Converts the .elf file output into .bin
+# ------------------------------------------
+make arche_dev.bin : elf : @elf2bin ;
+actions elf2bin
+{
+    $(OBJCOPY) -O binary $(>) $(<)
+}
