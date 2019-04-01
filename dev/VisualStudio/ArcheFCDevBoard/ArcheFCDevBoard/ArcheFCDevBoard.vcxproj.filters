@@ -956,6 +956,9 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\threads.hpp">
       <Filter>Arche</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\memory.hpp">
+      <Filter>Arche\config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
