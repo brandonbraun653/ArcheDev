@@ -4,6 +4,4 @@
 
 void test_thread( void *argument );
 
-void led_heartbeat( void *argument );
-
 #endif

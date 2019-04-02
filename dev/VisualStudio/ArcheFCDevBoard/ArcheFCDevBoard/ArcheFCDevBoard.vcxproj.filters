@@ -953,10 +953,19 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h">
       <Filter>Arche\config</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Arche\Arche\threads.hpp">
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\memory.hpp">
+      <Filter>Arche\config</Filter>
+    </ClInclude>
+    <ClInclude Include="arche_user_config.hpp">
+      <Filter>Header files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\serial.hpp">
+      <Filter>Arche\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\Arche\arche_threads.hpp">
       <Filter>Arche</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Arche\Arche\config\memory.hpp">
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\led.hpp">
       <Filter>Arche\config</Filter>
     </ClInclude>
   </ItemGroup>
@@ -1014,6 +1023,15 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_dma.cpp">
       <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Arche\Arche\iop_serial.cpp">
+      <Filter>Arche</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Arche\Arche\led_heartbeat.cpp">
+      <Filter>Arche</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Arche\Arche\sys_main.cpp">
+      <Filter>Arche</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\Arche\Arche\arche_threads.cpp">
       <Filter>Arche</Filter>

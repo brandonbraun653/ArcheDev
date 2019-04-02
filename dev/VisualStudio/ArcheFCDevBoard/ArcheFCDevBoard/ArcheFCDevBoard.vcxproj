@@ -68,6 +68,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Arche\Arche\arche_threads.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\iop_serial.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\led_heartbeat.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\sys_main.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
@@ -90,8 +93,10 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_thread.cpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\led.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\memory.hpp" />
-    <ClInclude Include="..\..\..\..\Arche\Arche\threads.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\serial.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\arche_threads.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
@@ -369,6 +374,7 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\uart.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\usart.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\watchdog.hpp" />
+    <ClInclude Include="arche_user_config.hpp" />
     <ClInclude Include="test_thread.hpp" />
   </ItemGroup>
 </Project>
