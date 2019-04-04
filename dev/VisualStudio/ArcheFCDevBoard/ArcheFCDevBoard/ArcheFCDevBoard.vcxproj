@@ -98,6 +98,7 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\config\serial.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\arche_threads.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\watchdog.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />

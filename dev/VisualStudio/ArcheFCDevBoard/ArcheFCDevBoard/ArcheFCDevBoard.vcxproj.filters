@@ -968,6 +968,9 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\config\led.hpp">
       <Filter>Arche\config</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\Arche\config\watchdog.hpp">
+      <Filter>Arche\config</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
