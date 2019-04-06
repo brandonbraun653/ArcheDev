@@ -43,16 +43,18 @@
     <ClCompile>
       <CPPLanguageStandard>GNUPP14</CPPLanguageStandard>
       <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/Arche/config/freertos;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);DEBUG=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;;BOOST_CONTAINER_USER_DEFINED_THROW_CALLBACKS;CHIMERA_LITTLE_ENDIAN</PreprocessorDefinitions>
       <CLanguageStandard>GNU11</CLanguageStandard>
+      <Optimization>Og</Optimization>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|VisualGDB'">
     <ClCompile>
       <CPPLanguageStandard>GNUPP14</CPPLanguageStandard>
       <AdditionalIncludeDirectories>$(BOOST_ROOT)/boost_1_68_0;$(ProjectDir)../../../../lib/FreeRTOS/portable/GCC/ARM_CM4F;$(ProjectDir)../../../../lib/FreeRTOS/include;$(ProjectDir)../../../../lib/stm32hal_f4/STM32F4xx_HAL_Driver/Inc;$(ProjectDir)../../../../lib/stm32hal_f4/Device/sys;$(ProjectDir)../../../../lib/stm32hal_f4/Device/include;$(ProjectDir)../../../../lib/stm32hal_f4/Device/conf;$(ProjectDir)../../../../lib/cmsis/CMSIS/Core/Include;$(ProjectDir)../../../../lib/Thor;$(ProjectDir)../../../../lib/Thor/Thor/config/chimera;$(ProjectDir)../../../../lib/Chimera;$(ProjectDir)../../../../Arche/Arche/config/freertos;$(ProjectDir)../../../../Arche;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(ClCompile.PreprocessorDefinitions);NDEBUG=1;RELEASE=1;USE_FULL_LL_DRIVER;BOOST_NO_EXCEPTIONS;;STM32F446xx;;USE_FREERTOS;USING_FREERTOS;;BOOST_CONTAINER_USER_DEFINED_THROW_CALLBACKS;CHIMERA_LITTLE_ENDIAN</PreprocessorDefinitions>
       <CLanguageStandard>GNU11</CLanguageStandard>
+      <Optimization>Os</Optimization>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -67,11 +69,25 @@
     <None Include="stm32.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Arche\Arche\arche_threads.cpp" />
-    <ClCompile Include="..\..\..\..\Arche\Arche\iop_serial.cpp" />
-    <ClCompile Include="..\..\..\..\Arche\Arche\led_heartbeat.cpp" />
-    <ClCompile Include="..\..\..\..\Arche\Arche\sys_main.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\commands.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_erase.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_extended_erase.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_get.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_get_id.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_get_ver.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_go.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_readout_protect.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_readout_unprotect.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_read_mem.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_threads.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_write_mem.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_write_protect.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_write_unprotect.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_command_dispatch.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\led_heartbeat.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\threads\sys_main.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\exception.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp" />
@@ -93,16 +109,18 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="test_thread.cpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\commands.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\led.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\memory.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\serial.hpp" />
-    <ClInclude Include="..\..\..\..\Arche\Arche\arche_threads.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\threads.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\watchdog.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\dma.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\exception.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp" />
