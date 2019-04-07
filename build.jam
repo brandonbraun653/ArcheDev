@@ -3,7 +3,6 @@ local dev_dir = dev/VisualStudio/ArcheFCDevBoard/ArcheFCDevBoard ;
 
 exe ARCHE_DEV
     :   $(dev_dir)/main.cpp
-        $(dev_dir)/test_thread.cpp
         /CHIMERA//CORE
         /THOR//CORE
         /FREERTOS//CORE
@@ -11,7 +10,6 @@ exe ARCHE_DEV
         /ARCHE//ARCHE_LIB
 
     :   <link>static
-        <include>$(arche_inc_dir)
         <include>$(dev_dir)
         <use>/CHIMERA//PUB
         <use>/ARCHE//PUB

@@ -2,8 +2,6 @@
 #include <Chimera/chimera.hpp>
 #include <Chimera/threading.hpp>
 
-#include <test_thread.hpp>
-
 #include <Arche/threads.hpp>
 
 int main()
