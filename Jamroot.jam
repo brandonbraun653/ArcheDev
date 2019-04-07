@@ -8,12 +8,8 @@ rule explicit_alias ( name : sources * : requirements * : default-build * : usag
     }
 
 path-constant TOP : . ;
-path-constant OBJCOPY : "D:/ProgramFiles/gcc/bin/arm-none-eabi-objcopy.exe" ;
 
-using gcc : 8.2.1 : "D:/ProgramFiles/gcc/bin/arm-none-eabi-g++.exe" 
-    :   <archiver>D:/ProgramFiles/gcc/bin/arm-none-eabi-ar.exe
-        <ranlib>D:/ProgramFiles/gcc/bin/arm-none-eabi-ranlib.exe
-    ;
+using gcc ;
 
 use-project /PRJ : . ;
 use-project /CHIMERA : lib/Chimera ;
@@ -41,7 +37,7 @@ project Arche
         <architecture>arm
         <toolset>gcc
         <link>static
-        <linkflags>-Wl,-Map,$(artifacts_dir)/aerofc.map
+        <linkflags>-Wl,-Map,$(artifacts_dir)/arche.map
         <cxxflags>--std=gnu++14
         <ThorFamily>STM32F4
         <ThorChip>STM32F446
