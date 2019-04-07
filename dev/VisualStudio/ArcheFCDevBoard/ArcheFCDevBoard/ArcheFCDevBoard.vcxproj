@@ -99,10 +99,10 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exti.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_system.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_watchdog.cpp" />
@@ -138,7 +138,6 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\conf\stm32f4xx_hal_conf.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\include\stm32f401xc.h" />
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\Device\include\stm32f401xe.h" />
@@ -371,6 +370,7 @@
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\GCC\ARM_CM4F\port.c" />
     <ClInclude Include="..\..\..\..\lib\FreeRTOS\portable\GCC\ARM_CM4F\portmacro.h" />
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\MemMang\heap_4.c" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimera\chimeraPort.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\core.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\defaults.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\definitions.hpp" />

@@ -94,6 +94,9 @@
     <Filter Include="Arche\threads">
       <UniqueIdentifier>{8034ec52-9fc0-47de-bbe6-e886c190d2b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Thor\config\chimera">
+      <UniqueIdentifier>{c9d3dcf2-fb18-46bf-9af4-a14e910347e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="stm32.props">
@@ -875,9 +878,6 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\arche.hpp">
       <Filter>Arche</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimeraPort.hpp">
-      <Filter>Thor\config</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
@@ -977,6 +977,9 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\exception.hpp">
       <Filter>Chimera</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimera\chimeraPort.hpp">
+      <Filter>Thor\config\chimera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1001,9 +1004,6 @@
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_nucleo.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp">
@@ -1083,6 +1083,9 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\exception.cpp">
       <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_system.cpp">
+      <Filter>Thor</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -64,6 +64,7 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_serial.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_spi.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_system.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_uart.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_usart.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_watchdog.cpp" />

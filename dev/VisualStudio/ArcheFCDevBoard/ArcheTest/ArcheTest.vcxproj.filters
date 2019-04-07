@@ -117,6 +117,11 @@
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp">
       <Filter>Chimera</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gtest-all.cc" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\lib\native\src\gmock-all.cc" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_system.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\lib\stm32hal_f4\mock\core_cm4.h">
@@ -281,5 +286,8 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\watchdog.hpp">
       <Filter>Chimera</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
