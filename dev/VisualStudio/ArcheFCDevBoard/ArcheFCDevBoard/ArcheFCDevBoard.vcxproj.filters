@@ -980,6 +980,12 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimera\chimeraPort.hpp">
       <Filter>Thor\config\chimera</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\crc.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\crc.hpp">
+      <Filter>Thor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1085,6 +1091,9 @@
       <Filter>Chimera</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_system.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_crc.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
   </ItemGroup>

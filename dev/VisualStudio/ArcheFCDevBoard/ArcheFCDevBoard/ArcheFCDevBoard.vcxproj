@@ -93,6 +93,7 @@
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_boost_stub.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_core.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_crc.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_defaults.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_dma.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_exceptions.cpp" />
@@ -118,6 +119,7 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\crc.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\dma.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\exception.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp" />
@@ -372,6 +374,7 @@
     <ClCompile Include="..\..\..\..\lib\FreeRTOS\portable\MemMang\heap_4.c" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\config\chimera\chimeraPort.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\core.hpp" />
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\crc.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\defaults.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\definitions.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\dma.hpp" />
