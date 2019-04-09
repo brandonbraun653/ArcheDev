@@ -923,9 +923,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\macro.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\mem.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\nucleo.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
@@ -986,6 +983,18 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\crc.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\flash.hpp">
+      <Filter>Thor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\allocator.hpp">
+      <Filter>Thor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\memory.hpp">
+      <Filter>Chimera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\lib\Thor\Thor\sram.hpp">
+      <Filter>Thor</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1007,9 +1016,6 @@
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_gpio.cpp">
-      <Filter>Thor</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_mem.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_print.cpp">
@@ -1094,6 +1100,15 @@
       <Filter>Thor</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_crc.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_flash.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_allocator.cpp">
+      <Filter>Thor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_sram.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
   </ItemGroup>

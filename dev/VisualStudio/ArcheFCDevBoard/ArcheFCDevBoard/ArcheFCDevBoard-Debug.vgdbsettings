@@ -52,7 +52,9 @@
         <SearchInProjectDir>true</SearchInProjectDir>
         <SearchInSourceDirs>true</SearchInSourceDirs>
         <SearchInIncludeSubdirs>true</SearchInIncludeSubdirs>
-        <IgnoredDirs />
+        <ExtraSearchDirs>
+          <string>C:\SysGCC\arm-eabi\arm-eabi\include</string>
+        </ExtraSearchDirs>
         <IgnoredHeaders />
       </DiscoverySettings>
       <CheckForClangFormatFiles xsi:nil="true" />
