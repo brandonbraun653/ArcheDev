@@ -87,9 +87,10 @@
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\led_heartbeat.cpp" />
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\sys_main.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\exception.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\logging.cpp" />
-    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\threading.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_crc.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_exception.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_logging.cpp" />
+    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_threading.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_boost_stub.cpp" />
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_core.cpp" />
