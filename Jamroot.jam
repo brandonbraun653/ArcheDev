@@ -44,6 +44,7 @@ project Arche
         <ThorVariant>RE
         <FreeRTOS>enabled
         <FreeRTOSMem>heap4
+        <FreeRTOSPort>CortexM
         <Chimera>enabled
         <ChimeraBackend>Thor
     ;

@@ -28,6 +28,7 @@ install install-ARCHE : arche_dev.hex arche_dev.bin : <location>$(TOP)/artifacts
 make arche_dev.hex : elf : @elf2hex ;
 actions elf2hex
 {
+    # OBJCOPY should be a path-constant in user-config.jam
     $(OBJCOPY) -O ihex $(>) $(<)
 }
 
@@ -37,5 +38,6 @@ actions elf2hex
 make arche_dev.bin : elf : @elf2bin ;
 actions elf2bin
 {
+    # OBJCOPY should be a path-constant in user-config.jam
     $(OBJCOPY) -O binary $(>) $(<)
 }
