@@ -69,7 +69,7 @@
     <None Include="stm32.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Arche\Arche\commands.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\arche_commands.cpp" />
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_erase.cpp" />
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_extended_erase.cpp" />
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_get.cpp" />
@@ -86,6 +86,7 @@
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_command_dispatch.cpp" />
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\led_heartbeat.cpp" />
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\sys_main.cpp" />
+    <ClCompile Include="..\..\..\..\Arche\Arche\arche_utilities.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_crc.cpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_exception.cpp" />
@@ -119,14 +120,13 @@
     <ClInclude Include="..\..\..\..\Arche\Arche\threads.hpp" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\freertos\FreeRTOSConfig.h" />
     <ClInclude Include="..\..\..\..\Arche\Arche\config\watchdog.hpp" />
+    <ClInclude Include="..\..\..\..\Arche\Arche\utilities.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\assertion.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\crc.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\dma.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\exception.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\memory.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\preprocessor.hpp" />
@@ -134,12 +134,10 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\spi.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\system.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\threading.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\types.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\utilities.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\watchdog.hpp" />
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\freertos\freertos_hooks_prj.cpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\freertos\freertos_hooks_prj.hpp" />
-    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\blockDevice.hpp" />
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\flash.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\boostStub.hpp" />
@@ -397,7 +395,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\sram.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\system.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp" />
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\types.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\uart.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\usart.hpp" />
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\watchdog.hpp" />

@@ -7,7 +7,6 @@
 
 /* Chimera Includes */
 #include "chimeraPort.hpp"
-#include <Chimera/types.hpp>
 
 /*------------------------------------------------
 Memory Region Configuration
@@ -47,8 +46,6 @@ Comment to disable the heartbeat functionality
 ------------------------------------------------*/
 #define ARCHE_HEARTBEAT_ENABLED
 #ifdef ARCHE_HEARTBEAT_ENABLED
-
-#include <Chimera/interface.hpp>
 
 static constexpr uint8_t USER_HEARTBEAT_GPIO_PIN              = 8;
 static constexpr Chimera::GPIO::Port USER_HEARTBEAT_GPIO_PORT = Chimera::GPIO::Port::PORTC;

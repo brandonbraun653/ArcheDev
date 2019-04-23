@@ -120,13 +120,7 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\chimera.hpp">
       <Filter>Chimera</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\clock.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\gpio.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\interface.hpp">
       <Filter>Chimera</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\logging.hpp">
@@ -147,9 +141,6 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\threading.hpp">
       <Filter>Chimera</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\types.hpp">
-      <Filter>Chimera</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\utilities.hpp">
       <Filter>Chimera</Filter>
     </ClInclude>
@@ -162,9 +153,6 @@
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\freertos\freertos_hooks_prj.hpp">
       <Filter>Chimera\modules\freertos</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\chimera_flash.cpp">
-      <Filter>Chimera\modules\memory</Filter>
-    </ClCompile>
     <ClInclude Include="..\..\..\..\lib\Chimera\Chimera\modules\memory\blockDevice.hpp">
       <Filter>Chimera\modules\memory</Filter>
     </ClInclude>
@@ -875,9 +863,6 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\thor.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\lib\Thor\Thor\types.hpp">
-      <Filter>Thor</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\uart.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
@@ -989,6 +974,9 @@
     <ClInclude Include="..\..\..\..\lib\Thor\Thor\sram.hpp">
       <Filter>Thor</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Arche\Arche\utilities.hpp">
+      <Filter>Arche</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -1084,9 +1072,6 @@
     <ClCompile Include="..\..\..\..\Arche\Arche\threads\arche_command_dispatch.cpp">
       <Filter>Arche\threads</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Arche\Arche\commands.cpp">
-      <Filter>Arche</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Thor\Thor\thor_system.cpp">
       <Filter>Thor</Filter>
     </ClCompile>
@@ -1113,6 +1098,12 @@
     </ClCompile>
     <ClCompile Include="..\..\..\..\lib\Chimera\Chimera\chimera_exception.cpp">
       <Filter>Chimera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Arche\Arche\arche_utilities.cpp">
+      <Filter>Arche</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Arche\Arche\arche_commands.cpp">
+      <Filter>Arche</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
